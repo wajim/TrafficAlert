@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_margin_top"
+    tools:context="com.luxjim.trafficalert.MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="INSTRUCTIONS"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/layout_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="0dp"
+            android:layout_height="40.0dip"
+            android:layout_weight="1"
+            android:text="Add route"
+            android:onClick="addroute"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_back_btn_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <Button
+            android:id="@+id/button_rtlist"
+            android:layout_width="0dp"
+            android:layout_height="40.0dip"
+            android:layout_weight="1"
+            android:text="Route list"
+            android:onClick="mapcheck"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_back_btn_button"
+            android:layout_alignBaseline="@+id/button_add"
+            android:layout_alignBottom="@+id/button_add"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:textSize="@dimen/dimen_textSize"
+        android:layout_marginTop="30dp"
+        android:text="@string/help" />
+</RelativeLayout>

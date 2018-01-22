@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/card_background">
+
+        <TextView
+            android:id="@+id/txt_route_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/dimen_textSize"
+            android:textColor="@android:color/primary_text_light"
+            />
+
+        <TextView
+            android:id="@+id/txt_origine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/dimen_textSize"
+            android:textColor="@android:color/primary_text_light"
+            android:layout_toRightOf="@+id/txt_route_id"
+            />
+
+        <TextView
+            android:id="@+id/txt_arrivee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_textSize"
+            android:textColor="@android:color/primary_text_light"
+            android:layout_below="@+id/txt_origine"
+            android:paddingLeft="40dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

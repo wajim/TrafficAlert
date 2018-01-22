@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">Traffic Alert</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_display">Display</string>
+    <string name="title_activity_instructions">Instructions</string>
+    <string name="title_activity_verify">Verify</string>
+    <string name="dest">Destination</string>
+    <string name="depart">Start</string>
+    <string name="btnadd">Instructions</string>
+    <string name="btnreset">Route List</string>
+    <string name="access_token">pk.eyJ1Ijoid2FqaW0iLCJhIjoiY2pjbGFuc3ltMDRiaTJwbzQ1aWQ3czMweCJ9.V8hdNffEKyIEmVs3fxFWTA</string>
+    <string name="help">Please execute the following steps to setup your routes:\n\n\n\t1:Click Add route to open the route screen.\n\t2:Input Start and Destination Address.\n\t3:Click SAVE.\n\t4:The route will be saved into database, you can check the list by clicking the View route button.\n\t\n\n\tLet\'s GO!</string>
+
+
+</resources>
+

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--main.xml-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:text="Route details"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="26sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip" />
+
+    <RelativeLayout android:id="@+id/route_det"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView android:id="@+id/tv_11"
+            android:layout_width="95dip"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_textSize"
+            android:text="Date" >
+        </TextView>
+
+        <TextView android:id="@+id/tv_12"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_textSize"
+            android:text="dd-mm-yy 0:00:00"
+            android:layout_toRightOf="@+id/tv_11">
+        </TextView>
+
+        <TextView android:id="@+id/tv_13"
+            android:layout_width="95dip"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="A"
+            android:textSize="@dimen/dimen_textSize"
+            android:layout_below="@+id/tv_11" >
+        </TextView>
+
+        <EditText android:id="@+id/tv_14"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:hint="Depart"
+            android:textSize="@dimen/dimen_textSize"
+            android:layout_below="@+id/tv_12"
+            android:layout_toRightOf="@+id/tv_13">
+        </EditText>
+
+        <TextView android:id="@+id/tv_15"
+            android:layout_width="95dip"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="B"
+            android:textSize="@dimen/dimen_textSize"
+            android:layout_below="@+id/tv_13" >
+        </TextView>
+
+        <EditText android:id="@+id/tv_16"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:hint="Destination"
+            android:textSize="@dimen/dimen_textSize"
+            android:layout_below="@+id/tv_14"
+            android:layout_toRightOf="@+id/tv_15">
+        </EditText>
+
+        <TextView android:id="@+id/tv_17"
+            android:layout_width="120dip"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="Distance"
+            android:textSize="@dimen/dimen_textSize"
+            android:layout_below="@+id/tv_15" >
+        </TextView>
+
+        <TextView android:id="@+id/tv_23"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="1 Km"
+            android:textSize="@dimen/dimen_textSize"
+            android:layout_below="@+id/tv_16"
+            android:layout_toRightOf="@+id/tv_17">
+        </TextView>
+
+        <TextView android:id="@+id/tv_19"
+            android:layout_width="120dip"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="Duration"
+            android:textSize="@dimen/dimen_textSize"
+            android:layout_below="@+id/tv_17" >
+        </TextView>
+
+        <TextView android:id="@+id/tv_20"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="1:11 h"
+            android:textSize="@dimen/dimen_textSize"
+            android:layout_below="@+id/tv_23"
+            android:layout_toRightOf="@+id/tv_19">
+        </TextView>
+
+        <TextView android:id="@+id/tv_21"
+            android:layout_width="120dip"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="D. traffic"
+            android:textSize="@dimen/dimen_textSize"
+            android:layout_below="@+id/tv_20" >
+        </TextView>
+
+        <TextView android:id="@+id/tv_22"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="2:12 h"
+            android:textSize="@dimen/dimen_textSize"
+            android:layout_below="@+id/tv_20"
+            android:layout_toRightOf="@+id/tv_21">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/layout_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="0dp"
+                android:layout_height="40.0dip"
+                android:layout_weight="1"
+                android:text="Map"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_back_btn_button"
+                android:onClick="showmap"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="0dp"
+                android:layout_height="40.0dip"
+                android:layout_weight="1"
+                android:text="Route List"
+                android:onClick="savedroutes"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_back_btn_button"
+                android:layout_alignBaseline="@+id/button_add"
+                android:layout_alignBottom="@+id/button_add"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
